@@ -1,0 +1,191 @@
+/*
+ Theme Name:   Astrid Child
+ Theme URI:    http://example.com
+ Description:  Astrid Child Theme
+ Author:       Oriana Gomez
+ Author URI:   http://example.com
+ Template:     astrid
+ Version:      1.0.0
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain: astrid
+ Tags: two-columns, right-sidebar, custom-colors, custom-background, custom-header, custom-menu, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
+
+*/
+
+.site-content > .container {
+    padding: 20px;
+}
+
+.custom-logo-link img {
+    margin: 0;
+}
+
+h1{
+	text-align: center;
+}
+
+.single-thumb {
+    text-align: center;
+}
+
+.author-image img{
+	border-radius: 100%;
+}
+
+.byline{
+	display: block !important;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.byline .author-image,
+.byline .author{
+	display: inline-block;
+}
+
+.byline .author{
+	padding: 0 5px;
+}
+
+.feature{
+	margin-top: 50px;
+}
+
+.clients{
+	display: flex;
+    flex-flow: row wrap;
+    margin: 20px 0; 
+}
+
+.clients .client{
+	display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.portfolio-box{
+	display: inline-block;
+    padding: 10px 100px;
+    width: 100%;
+}
+
+.project-wrapper{
+	position: relative;
+    min-height: 300px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.project-wrapper img{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    height: auto;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay{
+	width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    background: #fcd088;
+    opacity: 0;
+    transition: all 0.3s;
+    color: #FFFFFF;
+}
+
+.overlay:hover{
+	opacity: 1;
+}
+
+.overlay-text{
+    color: #FFFFFF !important;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 2px solid #FFFFFF;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.project-wrapper{
+    	min-height: 200px;
+    }
+
+    .portfolio-box{
+    	padding: 10px 50px;
+    }
+}
+
+.grid{
+	width: 100%;
+	display: inline-flex;
+}
+
+.grid-elem{
+	display: inline-block;
+	text-align: center;
+	font-size: 11px;
+}
+
+.quote{
+	margin: 20px -15px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.quote img{
+	opacity: .4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quote-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.quote-overlay h2 {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+	.quote-overlay h2 {
+    	font-size: 18px;
+	}
+}
+
+.footer-contact{
+	text-align: center;
+}
+
+.footer-contact a{
+	text-transform: uppercase;
+    font-size: 24px;
+    text-decoration: underline;
+}
